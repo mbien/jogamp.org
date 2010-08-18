@@ -1,0 +1,51 @@
+
+body {padding:15px 20px; margin:0; background: #f5f5f5; font-family: "Trebuchet MS", arial, verdana, helvetica, sans-serif;}
+
+#container {/*background-color:#ffffff;*/ padding:0px; min-width:700px;}
+
+#header {height:90px; background-color:#ffffff;}
+#logo {font-size:40px; padding:25px 0 0 30px;}
+#logo a {color:#444444; text-decoration:none; }
+#logo img {  margin-top: -10px; border-style:none; }
+#slogan {float:right; font-size:18px; color:#444444; padding:65px 15px 0 0;}
+
+/*webside theme colors*/
+#menu, #menu li, #sidebar li a:hover, #footer {background-color:#c9e2ff;}
+#menu a, #footer a, #footer {color: #3b4d4f}
+
+#menu {height:40px; margin-top:5px;}
+#menu ul {margin:0; padding:0;}
+#menu li {list-style:none; float:left;}
+#menu a {float:left; height:20px; padding:10px 30px; font-size:15px; font-weight:bold; text-decoration:none; font-family:Arial, Helvetica, sans-serif;}
+#menu a:hover {color:#444444; background-color: #ffffff;}
+
+#main {float:left; width:100%; height:100%; margin:5px 0; background-color: #FFFFFF; font-size:13px;}
+#main a {color:#111111; border-style:none;}
+#main a:hover {color:#000000; background-color: #eeeeee;}
+#main br {line-height:8px;}
+#main img { padding: 5px; border-style:none; }
+#main img:hover {background-color:white;}
+
+.rss {background:url(images/feed-icon-10x10.png) no-repeat scroll 2px 50% !important; padding:0px 0px 0px 15px;}
+.fill {margin-right:0 !important;}
+
+#sidebar {width:160px; height: auto; float: right; padding:0 30px 30px 30px; }
+#sidebar h3 {font-size:17px; font-weight:normal; margin:20px 0 5px 0;}
+#sidebar ul {margin:0; padding:0; /*border-top:1px solid #e6e6ff;*/}
+#sidebar li {list-style:none; /*border-bottom:1px solid #e6e6ff;*/}
+#sidebar li a {color:#111111; text-decoration:none; padding:3px; display:block;}
+
+#text {margin-right:225px; padding:10px 30px 30px 30px; border-right: 5px solid #F5F5F5;}
+#text h1 {font-size:22px; font-weight:normal; margin:20px 0 10px 0;}
+#text h2 {font-size:19px; font-weight:normal; margin:20px 0 10px 0;}
+#text ol, #text ul {padding:0; margin:8px 0;}
+#text li {margin-left:40px;}
+
+#footer {height:40px; font-size:11px; clear:both;}
+#footer a:hover {color:#444444;}
+#footer_left {float:left; padding:5px 0 0 5px;}
+#footer_left img {float: left; margin-right: 5px;}
+
+#footer_right {float:right; padding:13px 30px 0 0;}
+
+
