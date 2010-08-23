@@ -38,7 +38,10 @@
 
                 </div>
                 <div id="text">
-${content}
+<#list entries as entry>
+${entry.player}<br/>
+<!--${entry.description}-->
+</#list>
                 </div>
             </div>
             <div id="footer">
