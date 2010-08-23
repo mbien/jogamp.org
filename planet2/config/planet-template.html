@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Planet JogAmp</title>
+        <meta content="java, jogl, jocl, joal, opengl, opencl, openal, libraries" name="keywords"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="../style.css" type="text/css">
+        <#list feedlinks as feed>
+        <link rel="alternate" href="${planet.link}/${feed.fileName}" type="application/${feed.feedType}+xml">
+        </#list>
+    </head>
+
+    <body>
+
+        <div id="container">
+            <!-- header -->
+            <div id="header">
+                <div id="slogan">graphics, audio, media and processing libraries</div>
+                <div id="logo"><a href="http://jogamp.org/">Planet JogAmp</a></div>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="http://jogamp.org/">Home</a></li>
+                    <li><a href="../joal/www">JOAL</a></li>
+                    <li><a href="../jocl/www">JOCL</a></li>
+                    <li><a href="../jogl/www">JOGL</a></li>
+                    <li><a href="../wiki">Wiki</a></li>
+                    <li><a href="../forum.html">Forums</a></li>
+                </ul>
+            </div>
+
+            <div id="main">
+                <div id="sidebar">
+                    <h2>Feeds</h2>
+
+                    <ul>
+                    <#list feeds as feed>
+                        <li class="rss">
+                            <a href="${feed.link}">${feed.title}</a>
+                        </li>
+                    </#list>
+                    </ul>
+                    <!--
+                    <ul>
+                        <li><a href="forum.html">Forum / Mailing Lists</a></li>
+                        <li><a href="stream">Streams</a></li>
+                    </ul>
+                    -->
+                    <p>
+                        Powered by <a href="http://github.com/mbien/Hungry-Harry">Hungry Harry</a>
+                    </p>
+
+                    <p><!--
+                        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                        <script>
+                            new TWTR.Widget({
+                                version: 2,
+                                type: 'search',
+                                search: 'jogl',
+                                interval: 4000,
+                                title: '',
+                                subject: 'JogAmp on Twitter',
+                                width: 180,
+                                height: 300,
+                                theme: {
+                                    shell: {
+                                        background: '#ffffff',
+                                        color: '#000000'
+                                    },
+                                    tweets: {
+                                        background: '#ffffff',
+                                        color: '#444444',
+                                        links: '#000000'
+                                    }
+                                },
+                                features: {
+                                    scrollbar: false,
+                                    loop: false,
+                                    live: false,
+                                    hashtags: true,
+                                    timestamp: true,
+                                    avatars: false,
+                                    behavior: 'all'
+                                }
+                            }).render().start();
+                        </script>
+                    --></p>
+                </div>
+
+                <div id="text">
+<#list entries as entry>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+<a href="${entry.link}">${entry.title}</a><br/>
+${entry.published?datetime}<br/>
+${entry.content}<br/>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/><br/>
+</#list>
+                </div>
+
+            </div>
+            <div id="footer">
+               <div id="footer_left">
+                    <span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">JogAmp.org</span>
+                    by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jogamp.org" property="cc:attributionName" rel="cc:attributionURL">http://jogamp.org</a>
+                    is licensed under a <br/>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+
+<config>
+
+    <planet title="Planet JogAmp"
+            description="JogAmp Aggregated Feeds"
+            author="Hungry Harry"
+            maxEntries="20"
+            link="http://jogamp.org/planet">
+        <feed>rss_2.0</feed>
+        <template>/home/mbien/NetBeansProjects/JOGAMP/planet2/config/planet-template.html</template>
+        <output>/home/mbien/NetBeansProjects/JOGAMP/planet</output>
+    </planet>
+
+    <feed name="dominik" url="http://copypastaresearch.tumblr.com/rss"/>
+    <feed name="mbien" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jogl"/>
+    <feed name="jau" url="http://jausoft.com/blog/category/computer-stuff/3d-opengl/jogl/feed/"/>
+    <!--<feed name="ant" url="http://blogs.sun.com/ant/feed/entries/rss"/>-->
+</config>
