@@ -7,8 +7,8 @@
             maxEntries="20"
             link="http://jogamp.org/planet">
         <feed>rss_2.0</feed>
-        <template>/home/mbien/NetBeansProjects/JOGAMP/planet2/config/planet-template.html</template>
-        <output>/home/mbien/NetBeansProjects/JOGAMP/planet</output>
+        <template>/srv/www/jogamp.org/planet2/config/planet-template.html</template>
+        <output>/srv/www/jogamp.org/planet</output>
     </planet>
 
     <feed name="dominik" url="http://copypastaresearch.tumblr.com/rss"/>
