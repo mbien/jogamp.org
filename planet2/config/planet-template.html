@@ -32,8 +32,7 @@
 
             <div id="main">
                 <div id="sidebar">
-                    <h2>Feeds</h2>
-
+                    <h3>Feeds</h3>
                     <ul>
                     <#list feeds as feed>
                         <li class="rss">
@@ -41,17 +40,24 @@
                         </li>
                     </#list>
                     </ul>
-                    <!--
+
+                    <h3>Links</h3>
                     <ul>
                         <li><a href="forum.html">Forum / Mailing Lists</a></li>
                         <li><a href="stream">Streams</a></li>
                     </ul>
-                    -->
                     <p>
                         Powered by <a href="http://github.com/mbien/Hungry-Harry">Hungry Harry</a>
                     </p>
 
-                    <p><!--
+                    <h3>Entries</h3>
+                    <ul>
+                    <#list entries as entry>
+                        <li><a href="${entry.link}">${entry.title}</a></li>
+                    </#list>
+                    </ul>
+
+                    <p>
                         <script src="http://widgets.twimg.com/j/2/widget.js"></script>
                         <script>
                             new TWTR.Widget({
@@ -85,17 +91,17 @@
                                 }
                             }).render().start();
                         </script>
-                    --></p>
+                    </p>
                 </div>
 
                 <div id="text">
-<#list entries as entry>
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
-<a href="${entry.link}">${entry.title}</a><br/>
-${entry.published?datetime}<br/>
-${entry.content}<br/>
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/><br/>
-</#list>
+                    <#list entries as entry>
+                        <br/>
+                        <h2><a href="${entry.link}">${entry.title}</a></h2>
+                        ${entry.author} // ${entry.published?datetime}<br/><br/>
+                        ${entry.content}<br/>
+                        <br/>
+                    </#list>
                 </div>
 
             </div>
