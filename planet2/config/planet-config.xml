@@ -14,5 +14,6 @@
     <feed name="dominik" url="http://copypastaresearch.tumblr.com/rss"/>
     <feed name="mbien" url="http://michael-bien.com/mbien/feed/entries/atom?tags=jogl"/>
     <feed name="jau" url="http://jausoft.com/blog/category/computer-stuff/3d-opengl/jogl/feed/"/>
+    <feed name="rami" url="http://ramisantina.blogspot.com/feeds/posts/default/-/jogl"/>
     <!--<feed name="ant" url="http://blogs.sun.com/ant/feed/entries/rss"/>-->
 </config>
