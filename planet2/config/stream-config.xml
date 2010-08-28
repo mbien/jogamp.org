@@ -4,7 +4,7 @@
     <planet title="JogAmp Streams"
             description="JogAmp Aggregated Feeds"
             author="Hungry Harry"
-            maxEntries="8"
+            maxEntries="16"
             link="http://jogamp.org/stream/">
         <feed>atom_0.3</feed>
         <feed>rss_2.0</feed>
