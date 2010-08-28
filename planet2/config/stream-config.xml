@@ -30,14 +30,9 @@
     </template>
     <template keyword="youtube" idpattern="http://www.youtube.com/watch\?v=([^&amp;]+)" descriptionfilter="&lt;span&gt;(.*)&lt;/span&gt;">
 <![CDATA[
-            <object width="480" height="385">
-                <param name="movie" value="http://www.youtube.com/v/#id#&hl=en_US&fs=1&rel=0&color1=0x2b405b&color2=0x6b8ab6&hd=1"/>
-                <param name="allowFullScreen" value="true"/>
-                <param name="allowscriptaccess" value="always"/>
-                <embed src="http://www.youtube.com/v/#id#&hl=en_US&fs=1&rel=0&color1=0x2b405b&color2=0x6b8ab6&hd=1"
-                   type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385">
-                </embed>
-            </object>
+            <a href="http://www.youtube.com/watch?v=#id#"><img src="http://img.youtube.com/vi/#id#/1.jpg" alt="Youtube Video Thumbnail 1"/></a>
+            <a href="http://www.youtube.com/watch?v=#id#"><img src="http://img.youtube.com/vi/#id#/2.jpg" alt="Youtube Video Thumbnail 2"/></a>
+            <a href="http://www.youtube.com/watch?v=#id#"><img src="http://img.youtube.com/vi/#id#/3.jpg" alt="Youtube Video Thumbnail 3"/></a>
 ]]>
     </template>
 

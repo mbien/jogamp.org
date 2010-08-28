@@ -39,8 +39,19 @@
                 </div>
                 <div id="text">
 <#list entries as entry>
-${entry.player}<br/>
-<!--${entry.description}-->
+<div>
+ <table>
+  <tr>
+   <td width=400>
+    ${entry.player}
+   </td>
+   <td align="left" valign="center">
+   <b>${entry.title}</b><br>
+   ${entry.description}
+   </td>
+  </tr>
+ </table>
+</div>
 </#list>
                 </div>
             </div>
