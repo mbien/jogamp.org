@@ -15,6 +15,7 @@
     <feed name="vimeo" url="http://vimeo.com/tag:jogl/rss"/>
     -->
     <feed name="demoscenepassivist" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile"/>
+    <feed name="demoscenepassivist-favorites" url="http://gdata.youtube.com/feeds/api/users/DemoscenePassivist/favorites?orderby=updated"/>
 
     <template keyword="vimeo" idpattern="http://vimeo.com/([0-9]+)">
 <![CDATA[
