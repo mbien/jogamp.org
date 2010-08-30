@@ -1,12 +1,10 @@
-
 <config>
 
     <planet title="JogAmp Streams"
             description="JogAmp Aggregated Feeds"
             author="Hungry Harry"
-            maxEntries="16"
+            maxEntries="50"
             link="http://jogamp.org/stream/">
-        <feed>atom_0.3</feed>
         <feed>rss_2.0</feed>
         <template>/srv/www/jogamp.org/planet2/config/stream-template.html</template>
         <output>/srv/www/jogamp.org/stream</output>
