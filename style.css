@@ -48,4 +48,8 @@ body {padding:15px 20px; margin:0; background: #f5f5f5; font-family: "Trebuchet 
 
 #footer_right {float:right; padding:13px 30px 0 0;}
 
+td.streams_text { text-align: left; vertical-align: middle; }
+td.streams_thumbs { width:400px; }
+#streams img { width:120px; height:90px; }
+
 
