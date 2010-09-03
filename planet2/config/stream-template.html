@@ -35,7 +35,44 @@
                         <li><a href="../forum.html">Forum / Mailing Lists</a></li>
                         <li><a href="../blog/">Blogs</a></li>
                     </ul>
-
+                    <p>
+                        Powered by <a href="http://github.com/mbien/Hungry-Harry">Hungry Harry</a>
+                    </p>
+                    <p>
+                        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                        <script>
+                            new TWTR.Widget({
+                                version: 2,
+                                type: 'search',
+                                search: 'jogl',
+                                interval: 4000,
+                                title: '',
+                                subject: 'JogAmp on Twitter',
+                                width: 180,
+                                height: 300,
+                                theme: {
+                                    shell: {
+                                        background: '#ffffff',
+                                        color: '#000000'
+                                    },
+                                    tweets: {
+                                        background: '#ffffff',
+                                        color: '#444444',
+                                        links: '#000000'
+                                    }
+                                },
+                                features: {
+                                    scrollbar: false,
+                                    loop: false,
+                                    live: false,
+                                    hashtags: true,
+                                    timestamp: true,
+                                    avatars: false,
+                                    behavior: 'all'
+                                }
+                            }).render().start();
+                        </script>
+                    </p>
                 </div>
                 <div id="text">
 <#list entries as entry>
