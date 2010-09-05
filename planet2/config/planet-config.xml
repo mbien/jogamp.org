@@ -4,7 +4,9 @@
     <planet title="Planet JogAmp"
             description="JogAmp Aggregated Feeds"
             author="Hungry Harry"
-            maxEntries="30"
+            maxEntries="80"
+            maxEntriesPerPage="15"
+            name="index"
             link="http://jogamp.org/planet">
         <feed>rss_2.0</feed>
         <template>/srv/www/jogamp.org/planet2/config/planet-template.html</template>

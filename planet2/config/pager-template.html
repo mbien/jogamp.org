@@ -1,0 +1,17 @@
+<table class="centered">
+    <tr>
+        <td>
+            <#if prev??>
+                &laquo; <a href="${prev}">Previous Page</a> |
+            </#if>
+        </td>
+        <td>
+            <a href="${filename}">Page (${page} of ${pages})</a>
+        </td>
+        <td>
+            <#if next??>
+                | <a href="${next}">Next Page</a> &raquo;
+            </#if>
+        </td>
+    </tr>
+</table>

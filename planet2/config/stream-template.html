@@ -82,7 +82,7 @@
    <td class="streams_thumbs">
     ${entry.player}
    </td>
-   <td class="stream_stext">
+   <td class="streams_text">
    <b>${entry.title}</b><br>
    ${entry.filteredDescription}
    </td>
@@ -90,6 +90,12 @@
  </table>
 </div>
 </#list>
+
+<br/>
+<div class="centered">
+<#include "pager-template.html">
+</div>
+
                 </div>
             </div>
             <div id="footer">

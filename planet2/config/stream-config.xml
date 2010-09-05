@@ -3,30 +3,17 @@
     <planet title="JogAmp Streams"
             description="JogAmp Aggregated Feeds"
             author="Hungry Harry"
-            maxEntries="50"
+            maxEntries="100"
+            maxEntriesPerPage="20"
+            name="index"
             link="http://jogamp.org/stream/">
         <feed>rss_2.0</feed>
         <template>/srv/www/jogamp.org/planet2/config/stream-template.html</template>
         <output>/srv/www/jogamp.org/stream</output>
     </planet>
-<!--
-    <feed name="vimeo" url="http://vimeo.com/tag:jogl/rss"/>
-    -->
     <feed name="demoscenepassivist" url="http://gdata.youtube.com/feeds/base/users/DemoscenePassivist/uploads?alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile"/>
     <feed name="demoscenepassivist-favorites" url="http://gdata.youtube.com/feeds/api/users/DemoscenePassivist/favorites?orderby=updated"/>
 
-    <template keyword="vimeo" idpattern="http://vimeo.com/([0-9]+)">
-<![CDATA[
-            <object width="400" height="320">
-                <param name="allowfullscreen" value="true" />
-                <param name="allowscriptaccess" value="always" />
-                <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=#id#&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" />
-                <embed src="http://vimeo.com/moogaloop.swf?clip_id=#id#&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1"
-                   type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="320">
-                </embed>
-            </object>
-]]>
-    </template>
     <template keyword="youtube" idpattern="http://www.youtube.com/watch\?v=([^&amp;]+)" descriptionfilter="&lt;span&gt;(.*)&lt;/span&gt;">
 <![CDATA[
             <a href="http://www.youtube.com/watch?v=#id#"><img src="http://img.youtube.com/vi/#id#/1.jpg" alt="Youtube Video Thumbnail 1"/></a>
