@@ -36,13 +36,6 @@
             <div id="main">
 
                 <div id="sidebar">
-                    <h3>Community</h3>
-                    <ul>
-                        <li><a href="forum.html">Forum/Mailing Lists</a></li>
-                        <li><a href="wiki/index.php/Chatroom">XMPP chatroom</a></li>
-                        <li><a href="stream/" title="videos of projects">Streams</a></li>
-                        <li><a href="blog/" title="aggregated blogposts">Blogs</a></li>
-                    </ul>
                     <h3>Sponsors</h3>
                     <ul>
                         <li>
@@ -55,6 +48,13 @@
                                 <img src="images/fh-landshut.png" border="0" vspace="8" width="160" align="left" alt="University of Applied Sciences Landshut"/>
 			    </a>
 			</li>
+                    </ul>
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="forum.html">Forum/Mailing Lists</a></li>
+                        <li><a href="wiki/index.php/Chatroom">XMPP chatroom</a></li>
+                        <li><a href="stream/" title="videos of projects">Streams</a></li>
+                        <li><a href="blog/" title="aggregated blogposts">Blogs</a></li>
                     </ul>
                     <h3>Featured</h3>
                     <ul>
@@ -88,49 +88,35 @@
                         <ul>
                             <li> <a href="wiki/">Wiki Page</a></li>
                             <li> <a href="jogl/doc/bouml/html-svg/">OpenGL Profile Model (UML)</a></li>
-                            <li> How To Build [<a href="jogl/doc/HowToBuild.html">JOGL</a>,
-                                               <a href="jocl/doc/HowToBuild.html">JOCL</a>]</li>
+                            <li> How To Build [ <a href="jogl/doc/HowToBuild.html">JOGL</a>,
+                                                <a href="jocl/doc/HowToBuild.html">JOCL</a> ]</li>
                             <li> <a href="wiki/index.php/How_to_Contribute">How To Contribute</a></li>
                             <li>
-                                API Docs [<a href="deployment/gluegen-next/javadoc/">GlueGen</a>,
-                                          <a href="deployment/jogl-next/javadoc_public/">JOGL</a>,
-                                          <a href="chuck/job/jocl_onmaster/label=linux64-null-centos54-jogamp-x64-chuck-001/javadoc/">JOCL</a>]
+                                API Docs [ <a href="deployment/gluegen-next/javadoc/">GlueGen</a>,
+                                           <a href="deployment/jogl-next/javadoc_public/">JOGL</a>,
+                                           <a href="chuck/job/jocl_onmaster/label=linux64-null-centos54-jogamp-x64-chuck-001/javadoc/">JOCL</a> ]
                             </li>
                             <li>
                                 Misc Docs
                                 <ul>
                                     <li> <a href="doc/siggraph2010/jogamp-siggraph2010.pdf">SIGGRAPH 2010 - JogAmp BOF</a></li>
-                                    <li> Tutorials [<a href="wiki/index.php/Jogl_Tutorial">JOGL</a>,
-                                                    <a href="wiki/index.php/JOCL_Tutorial">JOCL</a>]</li>
+                                    <li> Tutorials [ <a href="wiki/index.php/Jogl_Tutorial">JOGL</a>,
+                                                     <a href="wiki/index.php/JOCL_Tutorial">JOCL</a> ] </li>
                                 </ul>
                             </li>
-
-                        </ul>
-
-                        <h2>SW Management</h2>
-                        <ul>
-                            <li><a href="bugzilla/">Bugzilla</a></li>
-                            <li><a href="chuck/">Build Server</a></li>
-                        </ul>
-                        
-                    </div>
-
-                    <div class="column">
-
-                        <h2>Builds</h2>
-                        <ul>
-                            <li><a href="deployment/jogamp-next/">Latest Aggregated Build</a></li>
-                            <!-- uncomment if we have a release -->
-                            <!--<li><a href="deployment/webstart/">Webstart - stable</a></li>-->
-                            <li><a href="deployment/webstart-next/">Webstart - Test Release</a></li>
-                            <li><a href="deployment/archive/">Archived Builds (some incl. signed webstart bundles)</a></li>
-                            <li><a href="deployment/autobuilds/">Automated Builds</a></li>
+                            <li>
+                                Outdated
+                                <ul>
+                                    <li> <a href="jogl/doc/userguide/">Userguide</a> </li>
+                                </ul>
+                            </li>
                         </ul>
 
                         <h2>Repositories</h2>
                         <ul>
+                            <li><a href="git">Common @ Jogamp</a></li>
                             <li>
-                                <a href="http://github.com/sgothel">Sven Gothel</a>
+                                <a href="http://github.com/sgothel">Sven Gothel @ github</a>
                                 <ul>
                                     <li><a href="http://github.com/sgothel/gluegen">gluegen</a></li>
                                     <li><a href="http://github.com/sgothel/jogl">jogl</a></li>
@@ -139,17 +125,35 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="http://github.com/mbien">Michael Bien</a>
+                                <a href="http://github.com/mbien">Michael Bien @ github</a>
                                 <ul>
-                                    <li><a href="http://github.com/mbien/gluegen">gluegen</a></li>
                                     <li><a href="http://github.com/mbien/jocl">jocl</a></li>
                                     <li><a href="http://github.com/mbien/jocl-demos">jocl-demos</a></li>
-                                    <li><a href="http://github.com/mbien/jogl">jogl</a></li>
                                     <li><a href="http://github.com/mbien/joal">joal</a></li>
                                 </ul>
                             </li>
-                            <li><a href="git">Local</a></li>
                         </ul>
+                    </div>
+
+                    <div class="column">
+
+                        <h2>Builds</h2>
+                        <ul>
+                            <!-- uncomment if we have a release -->
+                            <!--<li><a href="deployment/webstart/">Webstart - stable</a></li>-->
+                            <li><a href="deployment/webstart-next/">Webstart - Test Release</a></li>
+                            <li><a href="deployment/jogamp-next/">Latest Aggregated Build</a></li>
+                            <li><a href="deployment/archive/">Archived Builds (may incl. signed webstart bundles)</a></li>
+                            <li><a href="deployment/autobuilds/">Automated Builds</a></li>
+                        </ul>
+
+                        <h2>SW Management</h2>
+                        <ul>
+                            <li><a href="wiki/index.php/SW_Tracking">Wiki SW Tracking</a></li>
+                            <li><a href="bugzilla/">Bugzilla</a></li>
+                            <li><a href="chuck/">Build Server</a></li>
+                        </ul>
+                        
                     </div>
 
                     <div class="clear"></div>
