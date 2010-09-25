@@ -6,7 +6,7 @@
         <meta name="google-site-verification" content="TBm-1bOphAWp2QP205lF0UZCp86gIjQyQOi4Jg7Sb2U" />
         <title>JogAmp.org - java graphics, audio, media and processing libraries</title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
-        <link href="http://jogamp.org/SocialCoding/logo_symbol_finals/website_final_blue_favicon_symbol_16x16pel.ico" rel="shortcut icon"/>
+        <link href="SocialCoding/logo_symbol_finals/website_final_blue_favicon_symbol_16x16pel.ico" rel="shortcut icon"/>
     </head>
 
     <body>
@@ -36,6 +36,13 @@
             <div id="main">
 
                 <div id="sidebar">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="forum.html">Forum/Mailing Lists</a></li>
+                        <li><a href="wiki/index.php/Chatroom/">XMPP chatroom</a></li>
+                        <li><a href="stream/" title="videos of projects">Streams</a></li>
+                        <li><a href="blog/" title="aggregated blogposts">Blogs</a></li>
+                    </ul>
                     <h3>Sponsors</h3>
                     <ul>
                         <li>
@@ -48,12 +55,6 @@
                                 <img src="images/fh-landshut.png" border="0" vspace="8" width="160" align="left" alt="University of Applied Sciences Landshut"/>
 			    </a>
 			</li>
-                    </ul>
-                    <h3>Community</h3>
-                    <ul>
-                        <li><a href="forum.html">Forum/Mailing Lists</a></li>
-                        <li><a href="stream/">Streams</a></li>
-                        <li><a href="blog/">Blogs</a></li>
                     </ul>
                     <h3>Featured</h3>
                     <ul>
@@ -77,78 +78,81 @@
 
                 <div id="text">
                     <h1>Welcome</h1>
+                    <p>
                         JogAmp is the home of high performance Java libraries for 3D Graphics, Multimedia and Processing.<br/>
                         The projects JOGL, JOCL and JOAL provide cross platform language bindings to the OpenGL, OpenCL, OpenAL and OpenMAX APIs.
-                    <h2>Documentation</h2>
-                    <ul>
-                        <li> <a href="wiki/">Wiki Page</a></li>
-                        <li> <a href="jogl/doc/bouml/html-svg/">OpenGL Profile Model (UML)</a></li>
-                        <li> <a href="jogl/doc/HowToBuild.html">How To Build JOGL</a></li>
-                        <li> <a href="jocl/doc/HowToBuild.html">How To Build JOCL</a></li>
-                        <li> <a href="jogl/doc/userguide/">Userguide</a> <i>(outdated)</i></li>
-			<li>
-                            API Docs
-			    <ul>
-                                <li> <a href="deployment/gluegen-next/javadoc/">Gluegen API Doc (next)</a></li>
-			        <li> <a href="deployment/jogl-next/javadoc_public/">JOGL API Doc (next)</a></li>
-                                <li> <a href="http://jogamp.org/chuck/job/jocl_onmaster/label=linux64-null-centos54-jogamp-x64-chuck-001/javadoc/">JOCL API Doc (next)</a></li>
-			    </ul>
-                        </li>
-			<li>
-                            Misc Docs
-			    <ul>
-				<li>
-				    Siggraph 2010 - JogAmp BOF
-                                    <ul>
-					<li> <a href="doc/siggraph2010/jogamp-siggraph2010.pdf">PDF</a></li>
-					<li> <a href="doc/siggraph2010/jogamp-siggraph2010.odp">Open Office Format</a></li>
-			            </ul>
-			        </li>
-			    </ul>
-                        </li>
-
-                    </ul>
+                    </p>
                     
-                    <h2>SW Management</h2>
-                    <ul>
-                        <li><a href="wiki/index.php/SW_Tracking">SW Tracking (wiki)</a></li>
-                        <li><a href="bugzilla/">Bugzilla</a></li>
-                        <li><a href="chuck/">Build Server</a></li>
-                    </ul>
+                    <div class="column">
+                        <h2>Documentation</h2>
+                        <ul>
+                            <li> <a href="wiki/">Wiki Page</a></li>
+                            <li> <a href="jogl/doc/bouml/html-svg/">OpenGL Profile Model (UML)</a></li>
+                            <li> How To Build [<a href="jogl/doc/HowToBuild.html">JOGL</a>,
+                                               <a href="jocl/doc/HowToBuild.html">JOCL</a>]</li>
+                            <li> <a href="wiki/index.php/How_to_Contribute/">How To Contribute</a></li>
+                            <li>
+                                API Docs [<a href="deployment/gluegen-next/javadoc/">GlueGen</a>,
+                                          <a href="deployment/jogl-next/javadoc_public/">JOGL</a>,
+                                          <a href="chuck/job/jocl_onmaster/label=linux64-null-centos54-jogamp-x64-chuck-001/javadoc/">JOCL</a>]
+                            </li>
+                            <li>
+                                Misc Docs
+                                <ul>
+                                    <li> <a href="doc/siggraph2010/jogamp-siggraph2010.pdf">SIGGRAPH 2010 - JogAmp BOF</a></li>
+                                    <li> Tutorials [<a href="wiki/index.php/Jogl_Tutorial">JOGL</a>,
+                                                    <a href="wiki/index.php/JOCL_Tutorial">JOCL</a>]</li>
+                                </ul>
+                            </li>
 
-                    <h2>Builds</h2>
-                    <ul>
-                        <li><a href="deployment/webstart/">Webstart Codebase - Last Release</a></li>
-                        <li><a href="deployment/webstart-next/">Webstart Codebase - Test Release</a></li>
-                        <li><a href="deployment/jogamp-next/">Latest Aggregated Build (gluegen, jogl, jocl, ..)</a></li>
-                        <li><a href="deployment/archive/">Archived Builds may incl. archived signed webstart bundles</a></li>
-                        <li><a href="deployment/autobuilds/">Automated Builds</a></li>
-                    </ul>
+                        </ul>
 
-                    <h2>Repositories</h2>
-                    <ul>
-                        <li><a href="git">Local</a></li>
-                        <li>
-                            <a href="http://github.com/sgothel">Sven Gothel</a>
-                            <ul>
-                                <li><a href="http://github.com/sgothel/gluegen">gluegen</a></li>
-                                <li><a href="http://github.com/sgothel/jogl">jogl</a></li>
-                                <li><a href="http://github.com/sgothel/jogl-demos">jogl-demos</a></li>
-                                <li><a href="http://github.com/sgothel/jogl-utils">jogl-utils</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="http://github.com/mbien">Michael Bien</a>
-                            <ul>
-                                <li><a href="http://github.com/mbien/gluegen">gluegen</a></li>
-                                <li><a href="http://github.com/mbien/jocl">jocl</a></li>
-                                <li><a href="http://github.com/mbien/jocl-demos">jocl-demos</a></li>
-                                <li><a href="http://github.com/mbien/jogl">jogl</a></li>
-                                <li><a href="http://github.com/mbien/joal">joal</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                        <h2>SW Management</h2>
+                        <ul>
+                            <li><a href="bugzilla/">Bugzilla</a></li>
+                            <li><a href="chuck/">Build Server</a></li>
+                        </ul>
+                        
+                    </div>
 
+                    <div class="column">
+
+                        <h2>Builds</h2>
+                        <ul>
+                            <li><a href="deployment/jogamp-next/">Latest Aggregated Build</a></li>
+                            <!-- uncomment if we have a release -->
+                            <!--<li><a href="deployment/webstart/">Webstart - stable</a></li>-->
+                            <li><a href="deployment/webstart-next/">Webstart - Test Release</a></li>
+                            <li><a href="deployment/archive/">Archived Builds (some incl. signed webstart bundles)</a></li>
+                            <li><a href="deployment/autobuilds/">Automated Builds</a></li>
+                        </ul>
+
+                        <h2>Repositories</h2>
+                        <ul>
+                            <li>
+                                <a href="http://github.com/sgothel">Sven Gothel</a>
+                                <ul>
+                                    <li><a href="http://github.com/sgothel/gluegen">gluegen</a></li>
+                                    <li><a href="http://github.com/sgothel/jogl">jogl</a></li>
+                                    <li><a href="http://github.com/sgothel/jogl-demos">jogl-demos</a></li>
+                                    <li><a href="http://github.com/sgothel/jogl-utils">jogl-utils</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://github.com/mbien">Michael Bien</a>
+                                <ul>
+                                    <li><a href="http://github.com/mbien/gluegen">gluegen</a></li>
+                                    <li><a href="http://github.com/mbien/jocl">jocl</a></li>
+                                    <li><a href="http://github.com/mbien/jocl-demos">jocl-demos</a></li>
+                                    <li><a href="http://github.com/mbien/jogl">jogl</a></li>
+                                    <li><a href="http://github.com/mbien/joal">joal</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="git">Local</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="clear"></div>
                 </div>
 
             </div>
