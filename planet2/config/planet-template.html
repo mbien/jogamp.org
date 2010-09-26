@@ -3,11 +3,11 @@
     <head>
         <title>Planet JogAmp</title>
         <meta content="java, jogl, jocl, joal, opengl, opencl, openal, libraries" name="keywords"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" href="../style.css" type="text/css">
-        <link href="http://jogamp.org/SocialCoding/logo_symbol_finals/website_final_blue_favicon_symbol_16x16pel.ico" rel="shortcut icon">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="../style.css" type="text/css"/>
+        <link href="../SocialCoding/logo_symbol_finals/website_final_blue_favicon_symbol_16x16pel.ico" rel="shortcut icon"/>
         <#list feedlinks as feed>
-        <link rel="alternate" href="${planet.link}/${feed.fileName}" type="application/${feed.feedType}+xml">
+        <link rel="alternate" href="${planet.link}/${feed.fileName}" type="application/${feed.feedType}+xml"/>
         </#list>
     </head>
 
@@ -23,11 +23,14 @@
             <div id="menu">
                 <ul>
                     <li><a href="http://jogamp.org/">Home</a></li>
+                    <li><a href="../gluegen/www/">Gluegen</a></li>
                     <li><a href="../joal/www">JOAL</a></li>
                     <li><a href="../jocl/www">JOCL</a></li>
                     <li><a href="../jogl/www">JOGL</a></li>
                     <li><a href="../wiki">Wiki</a></li>
-                    <li><a href="../forum.html">Forums</a></li>
+                    <li><a href="../blog">Blogs</a></li>
+                    <li><a href="../stream/">Streams</a></li>
+                    <li><a href="../bugzilla">Bugzilla</a></li>
                 </ul>
             </div>
 
@@ -45,12 +48,16 @@
                     <h3>Links</h3>
                     <ul>
                         <li><a href="../forum.html">Forum / Mailing Lists</a></li>
+                        <li><a href="../wiki/index.php/Chatroom">XMPP Chatroom</a></li>
                         <li><a href="../stream">Streams</a></li>
+                        <li><a href="../blog/">Blogs</a></li>
                     </ul>
                     <p>
                         Powered by <a href="http://github.com/mbien/Hungry-Harry">Hungry Harry</a>
                     </p>
-
+                    <p>
+                        updated ${updated?string("MMM d, hh:mm")}
+                    </p>
                     <h3>Entries</h3>
                     <ul>
                     <#list entries as entry>

@@ -1,13 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>JogAmp Streams</title>
         <meta content="java, jogl, jocl, joal, opengl, opencl, openal, libraries" name="keywords"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link href="../style.css" rel="stylesheet" type="text/css"/>
-        <link href="http://jogamp.org/SocialCoding/logo_symbol_finals/website_final_blue_favicon_symbol_16x16pel.ico" rel="shortcut icon">
+        <link href="../SocialCoding/logo_symbol_finals/website_final_blue_favicon_symbol_16x16pel.ico" rel="shortcut icon"/>
         <#list feedlinks as feed>
-        <link rel="alternate" href="${planet.link}/${feed.fileName}" type="application/${feed.feedType}+xml">
+        <link rel="alternate" href="${planet.link}/${feed.fileName}" type="application/${feed.feedType}+xml"/>
         </#list>
     </head>
 
@@ -20,11 +20,14 @@
             <div id="menu">
                 <ul>
                     <li><a href="http://jogamp.org/">Home</a></li>
+                    <li><a href="../gluegen/www/">Gluegen</a></li>
                     <li><a href="../joal/www">JOAL</a></li>
-                    <li><a href="../jogl/www">JOCL</a></li>
+                    <li><a href="../jocl/www">JOCL</a></li>
                     <li><a href="../jogl/www">JOGL</a></li>
                     <li><a href="../wiki">Wiki</a></li>
                     <li><a href="../blog">Blogs</a></li>
+                    <li><a href="../stream/">Streams</a></li>
+                    <li><a href="../bugzilla">Bugzilla</a></li>
                 </ul>
 
             </div>
@@ -33,10 +36,15 @@
                     <h3>Community</h3>
                     <ul>
                         <li><a href="../forum.html">Forum / Mailing Lists</a></li>
+                        <li><a href="../wiki/index.php/Chatroom">XMPP Chatroom</a></li>
+                        <li><a href="../stream">Streams</a></li>
                         <li><a href="../blog/">Blogs</a></li>
                     </ul>
                     <p>
                         Powered by <a href="http://github.com/mbien/Hungry-Harry">Hungry Harry</a>
+                    </p>
+                    <p>
+                        updated ${updated?string("MMM d, hh:mm")}
                     </p>
                     <p>
                         <script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -83,7 +91,7 @@
     ${entry.player}
    </td>
    <td class="streams_text">
-   <b>${entry.title}</b><br>
+   <b>${entry.title}</b><br/>
    ${entry.filteredDescription}
    </td>
   </tr>
